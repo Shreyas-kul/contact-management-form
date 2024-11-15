@@ -1,0 +1,19 @@
+Challenge: Handling API requests and state management
+
+Initially, the React app faced issues with making API calls and managing the state of contacts. After setting up the backend routes and connecting the frontend with axios, the app successfully sent and received data to/from the backend.
+Solution:
+
+I used axios to interact with the backend APIs, sending HTTP requests from the React app to fetch, add, and update contact data.
+The state management was handled by React's useState and useEffect hooks to manage the contacts list and update the UI accordingly.
+Challenge: Working with MongoDB schema validation
+
+At first, I encountered issues with validating input data before storing it in MongoDB. Incorrect or missing fields would cause database errors.
+Solution:
+
+I added schema validation to the MongoDB model, making sure that all fields (e.g., first name, last name, email, phone) were required and properly validated before insertion into the database.
+Challenge: CORS error during development
+
+While testing the app, I encountered CORS errors when trying to fetch data from the backend.
+Solution:
+
+I installed and configured the cors package in the backend to allow requests from the frontend during development.
